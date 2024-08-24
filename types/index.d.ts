@@ -1,29 +1,22 @@
 declare module 'status-codes-collection' {
-  // Typen für die verschiedenen Statuscode-Sammlungen
-  type HttpStatusCodes = {
-    [key: `HTTP_${number}`]: number;
+  type StatusCode = {
+    [
+      key:
+        | `HTTP_${number}`
+        | `WS_${number}`
+        | `SMTP_${number}`
+        | `POP3_${string}`
+        | `IMAP_${string}`
+        | `FTP_${number}`
+    ]: number;
   };
 
-  type WsStatusCodes = {
-    [key: `WS_${number}`]: number;
-  };
+  type HttpStatusCodes = StatusCode;
+  type WsStatusCodes = StatusCode;
+  type SmtpStatusCodes = StatusCode;
+  type Pop3StatusCodes = StatusCode;
+  type ImapStatusCodes = StatusCode;
+  type FtpStatusCodes = StatusCode;
 
-  type SmtpStatusCodes = {
-    [key: `SMTP_${number}`]: number;
-  };
-
-  type Pop3StatusCodes = {
-    [key: `POP3_${string}`]: string;
-  };
-
-  type ImapStatusCodes = {
-    [key: `IMAP_${string}`]: string;
-  };
-
-  type FtpStatusCodes = {
-    [key: `FTP_${number}`]: number;
-  };
-
-  // Kombination aller Statuscodes
-  export const status: HttpStatusCodes & WsStatusCodes & SmtpStatusCodes & Pop3StatusCodes & ImapStatusCodes & FtpStatusCodes;
+  export const status: StatusCode;
 }
