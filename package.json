@@ -1,7 +1,8 @@
 {
   "name": "status-codes-collection",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
+  "types": "types/index.d.ts",
   "type": "module",
   "scripts": {
     "lint": "eslint . --ext .js,.ts",
