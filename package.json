@@ -8,10 +8,26 @@
     "format": "prettier --write .",
     "test": "jest"
   },
-  "keywords": ["status", "HTTP", "WebSockets", "SMTP", "POP3", "IMAP", "FTP"],
+  "keywords": [
+    "status",
+    "HTTP",
+    "WebSockets",
+    "SMTP",
+    "POP3",
+    "IMAP",
+    "FTP"
+  ],
   "author": "preinboth <github@preinboth.de>",
   "license": "ISC",
   "description": "A comprehensive collection of status codes for HTTP, WebSockets, SMTP, POP3, IMAP, FTP and more. This package provides a central source for all important status codes used in various protocols.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/preinboth/status-codes-collection.git"
+  },
+   "bugs": {
+    "url": "https://github.com/preinboth/status-codes-collection/issues"
+  },
+  "homepage": "https://github.com/preinboth/status-codes-collection",
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@babel/preset-env": "^7.25.4",
