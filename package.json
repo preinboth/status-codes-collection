@@ -1,0 +1,35 @@
+{
+  "name": "status-codes-collection",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint . --ext .js,.ts",
+    "format": "prettier --write .",
+    "test": "jest"
+  },
+  "keywords": ["status", "HTTP", "WebSockets", "SMTP", "POP3", "IMAP", "FTP"],
+  "author": "preinboth <github@preinboth.de>",
+  "license": "ISC",
+  "description": "A comprehensive collection of status codes for HTTP, WebSockets, SMTP, POP3, IMAP, FTP and more. This package provides a central source for all important status codes used in various protocols.",
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "@eslint/js": "^9.9.1",
+    "@typescript-eslint/eslint-plugin": "^8.2.0",
+    "@typescript-eslint/parser": "^8.2.0",
+    "babel-jest": "^29.7.0",
+    "eslint": "^9.9.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.9.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.3.3"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "testEnvironment": "node"
+  }
+}
